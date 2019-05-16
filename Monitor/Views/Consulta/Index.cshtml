@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Consulta";
+}
+
+<h2>Index</h2>
+<div><b>Table Format Data Displaying in ForEach</b><br  /></div>
+
+
+<table class ="table table-bordered table-responsive table-hover">
+    <tr>
+        <th>RUC</th>
+        <th>COMPROBANTE</th>
+        <th>SERIE</th>
+        <th>CORRELATIVO</th>
+        <th>FECHA DE EMISION</th>
+        <th>FECHA DE CARGA</th>
+        <th>ESTADO</th>
+        <th>NUMERO EMPRESA</th>
+        <th>MENSAJE</th>
+    </tr>
+    @foreach (var item in ViewBag.Consulta1)
+    {
+    <tr>
+        <td>@item.RUC</td>
+        <td>@item.COMPROBANTES</td>
+        <td>@item.SERIE</td>
+        <td>@item.CORRELATIVO</td>
+        <td>@item.FECHA_EMISION</td>
+        <td>@item.FECHA_CARGA</td>
+        <td>@item.ESTADO</td>
+        <td>@item.NUMERO_EMPRESA</td>
+        <td>@item.MENSAJE</td>
+
+    </tr>
+    }
+    </table>
